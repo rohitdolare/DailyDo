@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyDo app</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- fontawesome script -->
+    <script src="https://kit.fontawesome.com/2e8bab8b23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary bg-light" style="background-color:#053B50 ;">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"
+                style="font-family:Georgia, 'Times New Roman', Times, serif;font-size: xx-large;font-weight: 800;color: #053B50;">DailyDo</span>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid bg-white"
+        style="background-image: linear-gradient(rgb(100, 204, 197),rgb(23, 107, 135)); min-height: 100vh;">
+        <div class=" container p-4">
+            <div class="jumbotron" style="background-color: #EEEEEE;">
+                <div class="mb-4">
+                    <h1 style=" color: rgb(43, 87, 87);">Enter Quick Task Here</h1>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" id="input" class="form-control" placeholder="what's your plan?">
+
+                </div>
+                <div class="input-group mb-3">
+                    <input type="time" id="inputTime" min="00:00" max="24:00" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" id="addBtn" type="submit">Add</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="list-group" id="displayTodoItems"></ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
